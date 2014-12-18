@@ -8,8 +8,12 @@ Bundler.require(*Rails.groups)
 
 module MyStore
   class Application < Rails::Application
-    
+
     config.to_prepare do
+
+      # Added the line below for HEROKU deployment
+      config.assets.initialize_on_precompile = false
+
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
