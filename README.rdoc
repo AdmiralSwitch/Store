@@ -1,0 +1,7 @@
+== README
+
+This is an ecommerce site. The spree gem is responsible for most of it. I'm slowly learning how to style it and plan to push to heroku.
+
+Ruby version 2.1.3
+
+

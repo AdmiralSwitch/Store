@@ -1,0 +1,8 @@
+<!-- <h1>V BELOW IS THE HEADER! V</h1> -->
+<header id="header" class="row" data-hook>
+  <!-- <img src="/assets/logo.png" alt=""> -->
+  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+  <%= render :partial => 'spree/shared/nav_bar' %>
+  <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+</header>
+<!-- <h1>^ ABOVE IS THE HEADER! ^</h1> -->
